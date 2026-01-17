@@ -2,9 +2,11 @@ const countdownScreen = document.getElementById("countdownScreen");
 const mainContent = document.getElementById("mainContent");
 const timerEl = document.getElementById("timer");
 const music = document.getElementById("music");
+music.volume = 0.4; // volume 15%
 
 
-const birthday = new Date("January 17, 2026 10:47:00").getTime();
+
+const birthday = new Date("January 15, 2026 22:05:00").getTime();
 
 setInterval(()=>{
   const now = new Date().getTime();
