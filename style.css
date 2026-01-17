@@ -1,0 +1,336 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#050517;
+  color:white;
+  overflow-x:hidden;
+}
+
+.hidden{display:none}
+
+/* Countdown */
+#countdownScreen{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+#timer{
+  font-size:2rem;
+  margin-top:20px;
+}
+
+/* Hero */
+.hero{
+  min-height:40vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-family:'Pacifico', cursive;
+  font-size:3rem;
+}
+
+.hero p{
+  font-size:1.5rem;
+}
+.hero span{
+  font-size:1.2rem;
+  opacity:0.8;
+  display:block;
+  margin-top:10px;
+}
+/* Sections */
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+h2{
+  font-size:2.3rem;
+  margin-bottom:30px;
+}
+
+/* MEMORIES GALLERY */
+.gallery-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:15px;
+}
+
+.gallery{
+  width:280px;
+  overflow:hidden;
+  border-radius:25px;
+}
+
+.gallery-track{
+  display:flex;
+  transition:transform 0.6s ease-in-out;
+}
+
+.gallery-track img{
+  width:280px;
+  height:360px;
+  object-fit:cover;
+  flex-shrink:0;
+  border-radius:25px;
+}
+
+/* Nav buttons */
+.nav{
+  background:none;
+  border:none;
+  color:white;
+  font-size:2.5rem;
+  cursor:pointer;
+}
+
+/* Video */
+video{
+  width:90%;
+  max-width:400px;
+  border-radius:20px;
+}
+
+/* Letter */
+#letter p{
+  font-size:1.5rem;
+  line-height:1.8;
+  max-width:600px;
+  margin:auto;
+}
+
+/* Surprise */
+.surprise button{
+  padding:15px 30px;
+  font-size:1.2rem;
+  border-radius:30px;
+  border:none;
+  cursor:pointer;
+}
+
+#crazyBox{
+  margin-top:30px;
+  font-size:1.4rem;
+}
+
+/* Dua */
+.dua p{
+  font-size:1.4rem;
+  max-width:600px;
+  margin:auto;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .hero h1{font-size:2.5rem}
+  h2{font-size:2rem}
+  #letter p,.dua p{font-size:1.3rem}
+}
+
+/* Letter Button */
+.open-letter-btn{
+  padding:15px 35px;
+  font-size:1.2rem;
+  border-radius:40px;
+  border:none;
+  background:linear-gradient(135deg,#ffb6c1,#ffc0cb);
+  color:#050517;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.open-letter-btn:hover{
+  transform:scale(1.05);
+}
+
+/* Overlay */
+.letter-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.8);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
+  transition:0.4s ease;
+  z-index:1000;
+}
+
+.letter-overlay.active{
+  opacity:1;
+  pointer-events:auto;
+}
+
+/* Letter Box */
+.letter-box{
+  background:#fff;
+  color:#050517;
+  width:90%;
+  max-width:450px;
+  padding:35px 30px;
+  border-radius:20px;
+  text-align:left;
+  position:relative;
+  animation:openLetter 0.6s ease;
+}
+
+@keyframes openLetter{
+  from{
+    transform:scale(0.7) rotateX(20deg);
+    opacity:0;
+  }
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+.letter-box h3{
+  font-family:'Pacifico', cursive;
+  font-size:1.8rem;
+  margin-bottom:15px;
+}
+
+.letter-box p{
+  font-size:1.2rem;
+  line-height:1.8;
+}
+
+.signature{
+  margin-top:25px;
+  font-style:italic;
+  text-align:right;
+}
+
+/* Close Button */
+.close-btn{
+  position:absolute;
+  top:15px;
+  right:18px;
+  font-size:1.8rem;
+  cursor:pointer;
+}
+.letter-text{
+  font-size:1.25rem;
+  line-height:1.9;
+  letter-spacing:0.3px;
+}
+
+.letter-text span{
+  color:#d6336c;
+  font-weight:600;
+}
+
+.letter-text strong{
+  color:#07bb91;
+  font-weight:700;
+}
+
+.letter-text em{
+  display:block;
+  text-align:center;
+  margin-top:10px;
+  font-size:1.3rem;
+  font-style:italic;
+  color:#444;
+}
+/* Open Letter Button */
+.open-letter-btn{
+  padding:18px 35px;
+  font-size:1.3rem;
+  border:none;
+  border-radius:40px;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  color:white;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Modal Background */
+#letterModal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+/* Letter Box */
+.letter-box{
+  background:#fffaf0;
+  color:#222;
+  width:90%;
+  max-width:420px;
+  max-height:80vh;
+  border-radius:18px;
+  padding:25px 20px;
+  position:relative;
+  animation:unfold 0.6s ease;
+}
+
+/* Unfold animation */
+@keyframes unfold{
+  from{
+    transform:scaleY(0.2);
+    opacity:0;
+  }
+  to{
+    transform:scaleY(1);
+    opacity:1;
+  }
+}
+
+/* Close button */
+.close-btn{
+  position:absolute;
+  top:10px;
+  right:12px;
+  border:none;
+  background:none;
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
+/* Scrollable content */
+.letter-content{
+  max-height:60vh;
+  overflow-y:auto;
+  padding-right:10px;
+}
+
+.letter-content p{
+  font-size:1.2rem;
+  line-height:1.9;
+}
+
+.letter-content strong{
+  color:#d6336c;
+}
+
+.letter-content em{
+  display:block;
+  text-align:center;
+  margin-top:15px;
+  font-size:1.3rem;
+  font-style:italic;
+}

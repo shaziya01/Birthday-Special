@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Aman 🎂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Countdown -->
+<div id="countdownScreen">
+  <h1>Something special is coming for you…</h1>
+  <p id="timer"></p>
+</div>
+
+<div id="mainContent" class="hidden">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>
+  Happy Birthday<br>
+  Abdul Hafiz <span>— urf Aman 🌙</span>
+</h1>
+    <p>It’s your day now 🤍</p>
+  </section>
+
+  <!-- MEMORIES GALLERY -->
+  <section class="memories">
+    <h2>Just you ✨</h2>
+
+    <div class="gallery-wrapper">
+      <button class="nav prev" onclick="prevSlide()">‹</button>
+
+      <div class="gallery">
+        <div class="gallery-track" id="galleryTrack">
+          <img src="Aman images/img7.jpg">
+          <img src="Aman images/img2.jpeg">
+          <img src="Aman images/img5.jpg">
+          <img src="Aman images/img3.jpeg">
+          <img src="Aman images/img1.jpeg">
+          <img src="Aman images/img4.jpeg">
+          <img src="Aman images/img6.jpg">
+          <!-- <img src="Aman images/img4.jpeg"> -->
+          <!-- <img src="Aman images/img4.jpeg"> -->
+
+        </div>
+      </div>
+
+      <button class="nav next" onclick="nextSlide()">›</button>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section>
+    <h2>Moments 🎥</h2>
+    <video controls>
+      <source src="Us/video.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- FOR YOU -->
+<section id="letterSection">
+  <h2>For You 💌</h2>
+
+  <button class="open-letter-btn" onclick="openLetter()">
+    Open My Letter 💖
+  </button>
+</section>
+
+<!-- LETTER MODAL -->
+<div id="letterModal">
+  <div class="letter-box">
+    <button class="close-btn" onclick="closeLetter()">✕</button>
+
+    <div class="letter-content">
+  <p>
+  Mai chahti hu sara waqt tum muskurate raho jab tak ye sab dekh rhe ho,
+  warna acha nhi hoga beta, samjh lo 🤍
+  <br><br>
+
+  I don't know yrr ke tum meri life me kitna importance rakhte ho,
+  shayad jitna mai khud ko bhi nahi bata sakti,
+  ya usse bhi zyada.
+  <br><br>
+
+  I know ke tumhe wo shayad dikhta nahi hoga,
+  tumhari nazar se dekhu to shayad mai waisi nahi hu
+  jaisa tum apne ek partner me chahte ho,
+  lekin buddy believe it or not —
+  mai ye bilkul nahi hu jo mai tumhare sath hoti hu.
+  <br><br>
+
+  Mai nahi janti ke mai tumse kitni mohabbat karti hu
+  ke mai use bas bata du aur tum samajh jao,
+  magar itna zaroor janti hu ke
+  tum mere bestessttt friend ho ever,
+  aur Inshallah hamesha rahoge.
+  <br><br>
+
+  Mai bahot kuch kehna chahti hu,
+  lekin shayad tum bore ho rahe honge ye sab padh kar,
+  so bas yahin chhod deti hu.
+  <br><br>
+
+  Bas itna jaan lo —
+  mujhe tumhare sath hona pasand hai.
+  Tumhara ehsaas hi kaafi hota hai,
+  chahe hum baat kar rahe ho ya nahi.
+  <br><br>
+
+  I love your presence,
+  your smile,
+  your hair,
+  your eyes,
+  aur wo har cheez jo tumhe tum banati hai.
+  <br><br>
+
+  Mujhe nahi pata mai apni feelings kaise zahir karu,
+  mujhe ye sab karna aata bhi nahi,
+  bas umeed hai ke
+  tum samajh jaate hoge.
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+  
+
+  <!-- DUA -->
+  <section class="dua">
+    <h2>A Dua For You 🕯</h2>
+    <p class="letter-text">
+  Mai chahti hu tum humesha 
+  <span>muskurate raho</span> aur 
+  <span>khush raho</span>,  
+  chahe mere sath raho ya nahi.  
+
+  <br><br>
+
+  Tumhari 
+  <span>kamiyabi</span> me tumhara 
+  <span>sath dena</span> chahti hu,  
+  chahe mere sath rahi ya na raho.  
+
+  <br><br>
+
+  Allah tumhe kamiyab kare  
+  is <strong>DUNIYA</strong> me bhi  
+  aur <strong>AKHIRAT</strong> me bhi.  
+
+  <br><br>
+
+  <em>Ameen.</em>
+</p>
+
+  </section>
+
+  <!-- SURPRISE -->
+  <section class="surprise">
+    <!-- <h2>Surprise 🎁</h2> -->
+    <button onclick="crazySurprise()">CLICK ME 😈</button>
+    <div id="crazyBox"></div>
+  </section>
+
+
+</div>
+
+<!-- <audio id="music" src="music.mp3" loop></audio> -->
+
+<script src="script.js"></script>
+</body>
+</html>
