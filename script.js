@@ -4,7 +4,7 @@ const timerEl = document.getElementById("timer");
 const music = document.getElementById("music");
 
 
-const birthday = new Date("January 17, 2026 10:42:00").getTime();
+const birthday = new Date("January 17, 2026 10:47:00").getTime();
 
 setInterval(()=>{
   const now = new Date().getTime();
