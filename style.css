@@ -54,7 +54,7 @@ body{
 }
 /* Sections */
 section{
-  padding:80px 20px;
+  padding:50px 20px;
   text-align:center;
 }
 
@@ -333,4 +333,12 @@ video{
   margin-top:15px;
   font-size:1.3rem;
   font-style:italic;
+}
+.final-highlight{
+  margin:30px 26px;
+  font-size:1.6rem;
+  font-family:'Pacifico', cursive;
+  text-align:center;
+  color:#ffb6c1;
+  letter-spacing:1px;
 }
