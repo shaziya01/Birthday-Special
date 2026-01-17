@@ -6,7 +6,7 @@ music.volume = 0.4; // volume 15%
 
 
 
-const birthday = new Date("January 17, 2026 22:23:00").getTime();
+const birthday = new Date("January 18, 2026 00:00:00").getTime();
 
 setInterval(()=>{
   const now = new Date().getTime();
